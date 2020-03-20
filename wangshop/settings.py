@@ -24,7 +24,7 @@ SECRET_KEY = '3+ps$=$u^egavs9rxal+%8g_9#^&ux^s*39-*tfg$nmeem$cp5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 APPEND_SLASH = False
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 

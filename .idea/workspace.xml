@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e2f60a5-9156-4abe-b060-06497bf91683" name="Default Changelist" comment="修复跨域问题">
+    <list default="true" id="1e2f60a5-9156-4abe-b060-06497bf91683" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wangshop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/wangshop/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +129,7 @@
       <workItem from="1584624598806" duration="13708000" />
       <workItem from="1584676590186" duration="2363000" />
       <workItem from="1584684860274" duration="102000" />
-      <workItem from="1584684977352" duration="6063000" />
+      <workItem from="1584684977352" duration="6435000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore">
       <created>1584684884044</created>
@@ -151,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584696504766</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="修复跨域问题">
+      <created>1584696631637</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1584696631637</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,8 +180,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add gitignore" />
-    <MESSAGE value="修复跨域问题" />
     <MESSAGE value="MySQL连接" />
-    <option name="LAST_COMMIT_MESSAGE" value="MySQL连接" />
+    <MESSAGE value="修复跨域问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复跨域问题" />
   </component>
 </project>
