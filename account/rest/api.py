@@ -58,7 +58,9 @@ def login(request):
     **返回值**
     '''
     pwd = request.data.get('password')
+    LOG.debug("pwd %s", pwd)
     username = request.data.get('username')
+    LOG.debug("username %s", username)
     user = authenticate(username=username, password=pwd)
     if user is None:
         user = authenticate(username=username, password=pwd)
