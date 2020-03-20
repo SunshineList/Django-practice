@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e2f60a5-9156-4abe-b060-06497bf91683" name="Default Changelist" comment="add gitignore">
+    <list default="true" id="1e2f60a5-9156-4abe-b060-06497bf91683" name="Default Changelist" comment="修复跨域问题">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/rest/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/rest/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wangshop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/wangshop/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -131,7 +128,7 @@
       <workItem from="1584624598806" duration="13708000" />
       <workItem from="1584676590186" duration="2363000" />
       <workItem from="1584684860274" duration="102000" />
-      <workItem from="1584684977352" duration="4977000" />
+      <workItem from="1584684977352" duration="6063000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore">
       <created>1584684884044</created>
@@ -140,7 +137,21 @@
       <option name="project" value="LOCAL" />
       <updated>1584684884044</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="修复跨域问题">
+      <created>1584694135237</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584694135237</updated>
+    </task>
+    <task id="LOCAL-00003" summary="MySQL连接">
+      <created>1584696504766</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584696504766</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +172,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="add gitignore" />
+    <MESSAGE value="修复跨域问题" />
+    <MESSAGE value="MySQL连接" />
+    <option name="LAST_COMMIT_MESSAGE" value="MySQL连接" />
   </component>
 </project>
