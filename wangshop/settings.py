@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'captcha',
     'rest_framework.authtoken',
     # 'rest_framework.pagination',
     'account.apps.AccountConfig',
@@ -131,6 +132,8 @@ STATICFILES_DIRS = (
     # Don't forget to use absolute paths, not relative paths.
     os.path.join(BASE_DIR, 'static'),
 )
+
+LOGIN_URL = '/api/account/login'
 try:
     from .local_settings import *
 except Exception as e:
