@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e2f60a5-9156-4abe-b060-06497bf91683" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/yzm/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/rest_framework/api.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/wangshop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wangshop.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/account/rest/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/rest/api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/account/rest/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/rest/urls.py" afterDir="false" />
@@ -52,6 +53,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -61,6 +63,7 @@
   <component name="ProjectId" id="1ZLi6BhKhDMPPL7kVHXwrOOalAq" />
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="sqlite" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -136,7 +139,9 @@
       <workItem from="1584684977352" duration="7629000" />
       <workItem from="1584765835818" duration="5805000" />
       <workItem from="1584944540379" duration="112000" />
-      <workItem from="1584944670504" duration="11134000" />
+      <workItem from="1584944670504" duration="11992000" />
+      <workItem from="1584971754928" duration="3608000" />
+      <workItem from="1584975609612" duration="1223000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore">
       <created>1584684884044</created>
@@ -180,7 +185,21 @@
       <option name="project" value="LOCAL" />
       <updated>1584927380087</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="登录加入验证码">
+      <created>1584969170292</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1584969170292</updated>
+    </task>
+    <task id="LOCAL-00008" summary="登录加入验证码">
+      <created>1584969319477</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1584969319477</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +224,7 @@
     <MESSAGE value="修复跨域问题" />
     <MESSAGE value="修复域名无法访问的问题" />
     <MESSAGE value="update restframework url show" />
-    <option name="LAST_COMMIT_MESSAGE" value="update restframework url show" />
+    <MESSAGE value="登录加入验证码" />
+    <option name="LAST_COMMIT_MESSAGE" value="登录加入验证码" />
   </component>
 </project>

@@ -1,0 +1,71 @@
+{% extends "rest_framework/base.html" %}
+
+{% block title %}{% if name %}{{ name }} – {% endif %}REST API文档说明{% endblock %}
+
+{% block branding %}
+    <a class='navbar-brand' rel="nofollow" href='#'>
+        REST API文档说明
+    </a>
+{% endblock %}
+
+{% block breadcrumbs %}
+    {{ block.super }}
+    {% if request.path == '/api/' %}
+        <div class="well" style="margin-top:20px;color: #abcdef">
+            <h2>API使用说明</h2>
+            <p>
+                1、关于response：
+            <ol>
+                <li>正常的返回是json数据，例如用户信息接口正常返回值为：{'id':123, 'mobile':'13588998822', 'shop_name': '测试店铺'}</li>
+                <li>异常返回的数据结构也是json数据，格式为：<code>{'error': '错误提示信息', 'error_code': 'response错误状态码'}</code>
+                </li>
+            </ol>
+            </p>
+            <p>
+                3、关于空值：''表示空的字符串、null表示这个字段为空（没有指明类型）
+            </p>
+            <p>
+                4、关于图片：直接返回含域名的URL
+            </p>
+            <p>
+                5、关于API的HTTP方法：目前API仅支持GET或POST。点击下面的API链接，进入到相应API的说明页面，返回值中有一行Allow说明，例如<code>Allow: OPTIONS,
+                GET</code>表示此API支持GET方法和OPTIONS方法，其中OPTIONS方法是系统保留的，不作为业务操作。
+            </p>
+            <p>
+                6、关于参数：可选参数会注明【可选】标记，否则为必须
+            </p>
+        </div>
+    {% endif %}
+{% endblock %}
+
+{% block script %}
+    {{ block.super }}
+    {% if request.path == '/api/' %}
+        <script type="text/javascript">
+            $(function () {
+                var puns = $('.response-info pre.prettyprint span.pun:contains(":")');
+                $(".navbar-text").on("click", function () {
+                    $.ajax({
+                        type: 'get',
+                        url: '/api/logout/',
+                        success: function (res) {
+                            alert(res.message);
+                            window.location.reload()
+                        }
+                    })
+                });
+                if (puns.length) {
+                    var preffix = $(puns[0]).prev().text().split('-')[0];
+                    var text = '';
+                    puns.each(function () {
+                        text = $(this).prev().text();
+                        if (text.indexOf(preffix) != 0) {
+                            $(this).prev().prev().before('<hr style="margin-bottom:0;">');
+                            preffix = text.split('-')[0];
+                        }
+                    })
+                }
+            });
+        </script>
+    {% endif %}
+{% endblock script %}

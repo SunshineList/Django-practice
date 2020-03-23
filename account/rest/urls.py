@@ -11,9 +11,11 @@ from account.rest.router import HybridRouter
 # ]
 
 functions_and_view_classes = (
-    ('用户登录', path('login/', api.login, name='restv1-login')),
-    ('用户退出登录', path('logout/', api.logout, name='restv1-logout')),
-    # ('用户信息', path('info/', api.query_info, name='restv1-info')),
+    ('用户-登录', path('login/', api.login, name='restv1-login')),
+    ('用户-退出登录', path('logout/', api.logout, name='restv1-logout')),
+
+    ('账号-注册', path('register/', api.register, name='restv1-register')),
+    ('账号-修改密码', path('change_pwd/', api.change_pwd, name='restv1-change-pwd')),
     # ('验证码刷新', path('refresh_captcha/', refresh_captcha, name='restv1-refresh_captcha')),
     ('验证码获取', path('yzm', get_yzm, name='restv1-yzm')),
 )

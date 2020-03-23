@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'captcha',
     'rest_framework.authtoken',
-    # 'rest_framework.pagination',
     'account.apps.AccountConfig',
     'common',
     'corsheaders'
