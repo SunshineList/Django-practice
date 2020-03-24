@@ -54,8 +54,8 @@ def login(request):
     ---
     **参数说明**
 
-    * username=admin
-    * password=1234qwer
+    * username = admin
+    * password = 1234qwer
     * yzm = IGHK
     * key = alskmlkgasgnlsa
 
@@ -67,8 +67,8 @@ def login(request):
     LOG.debug("username %s", username)
     yzm = request.POST.get("yzm")  # 用户提交的验证码
     key = request.POST.get("hash")  # 验证码答案
-    if not yzm or not key or not jarge_captcha(yzm, key):
-        raise ParseError('验证码错误')
+    # if not yzm or not key or not jarge_captcha(yzm, key):
+    #     raise ParseError('验证码错误')
     user = authenticate(username=username, password=pwd)
     if user is None:
         user = authenticate(username=username, password=pwd)
