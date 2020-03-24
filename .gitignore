@@ -18,3 +18,4 @@ node_modules
 */migrations/*
 !*/migrations/__init__.py
 __pycache__
+local_settings.*

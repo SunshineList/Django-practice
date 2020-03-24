@@ -5,7 +5,8 @@ from rest_framework.decorators import api_view, permission_classes
 from rest_framework.exceptions import PermissionDenied
 from rest_framework.permissions import BasePermission
 from rest_framework.response import Response
-from yzm.views import jarge_captcha
+from yzm.views import jarge_captcha, send_code_email
+from yzm.models import EmailVerifyRecord
 from account.rest.serializers import UserSerializer
 from django.contrib.auth import authenticate, login as django_login, logout as django_logout, get_user_model
 from rest_framework.exceptions import ParseError
@@ -57,7 +58,7 @@ def login(request):
     * username = admin
     * password = 1234qwer
     * yzm = IGHK
-    * key = alskmlkgasgnlsa
+
 
     **返回值**
     """
@@ -146,6 +147,7 @@ def register(request):
     * password
     * password2
     * email
+    * email_key = alskmlkgasgnlsa
     **返回值**
     * 注册成功
     """
@@ -158,10 +160,14 @@ def register(request):
     if password != request.data.get('password2'):
         raise ParseError('两次输入的密码不一致')
     email = request.data.get('email')
+    email_key = request.POST.get('email_key')
+    LOG.debug("send_type  %s", email_key)
     if not email:
-        raise ParseError('请填写邮箱')
+        raise ParseError('请确保邮箱和类型是否正确')
+    is_success = EmailVerifyRecord.objects.filter(user=username, code=email_key).first()
+    if not is_success:
+        raise ParseError('邮箱验证码校验失败')
     User = get_user_model()
-
     if User.objects.filter(username=username).exists():
         raise ParseError('该用户已被注册了，请直接登录')
 

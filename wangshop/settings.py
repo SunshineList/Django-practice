@@ -27,6 +27,10 @@ APPEND_SLASH = False
 ALLOWED_HOSTS = ['*']
 
 # Application definition
+try:
+    from .local_settings import *
+except Exception as e:
+    pass
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -37,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'captcha',
+    'yzm',
     'rest_framework.authtoken',
     'account.apps.AccountConfig',
     'common',
@@ -83,7 +88,7 @@ DATABASES = {
         'NAME': 'shop',
         'USER': 'root',
         'PASSWORD': '19981008',
-        'HOST': '47.106.77.191',
+        'HOST': '127.0.0.1',
         'PORT': '3306',
     }
 }
@@ -105,6 +110,14 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+# 邮件配置
+EMAIL_USE_SSL = True
+EMAIL_HOST = 'smtp.qq.com'  # QQ邮箱
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'wzw571603974@qq.com'  # 帐号
+EMAIL_HOST_PASSWORD = 'juadrfsxfiwmbeaa'  # 授权码
+# 默认邮件
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 LANGUAGE_CODE = 'zh-hans'
 
@@ -133,10 +146,6 @@ STATICFILES_DIRS = (
 )
 
 LOGIN_URL = '/api/account/login'
-try:
-    from .local_settings import *
-except Exception as e:
-    pass
 
 LOGGING = {
     'version': 1,
