@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e2f60a5-9156-4abe-b060-06497bf91683" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/email/active.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/account/rest/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/rest/api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/account/rest/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/rest/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wangshop/local_settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wangshop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/wangshop/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yzm/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/yzm/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yzm/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/yzm/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -144,7 +139,8 @@
       <workItem from="1584944670504" duration="11992000" />
       <workItem from="1584971754928" duration="3608000" />
       <workItem from="1584975609612" duration="6800000" />
-      <workItem from="1585019533401" duration="3805000" />
+      <workItem from="1585019533401" duration="3856000" />
+      <workItem from="1585141737450" duration="1857000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore">
       <created>1584684884044</created>
@@ -223,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585013088906</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="增加邮箱验证">
+      <created>1585030674645</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1585030674645</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,6 +254,7 @@
     <MESSAGE value="登录加入验证码" />
     <MESSAGE value="加入修改密码，注册接口" />
     <MESSAGE value="去掉校验验证码" />
-    <option name="LAST_COMMIT_MESSAGE" value="去掉校验验证码" />
+    <MESSAGE value="增加邮箱验证" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加邮箱验证" />
   </component>
 </project>

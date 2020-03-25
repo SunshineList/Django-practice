@@ -75,6 +75,11 @@ def login(request):
         user = authenticate(username=username, password=pwd)
         if user is None:
             raise ParseError('账号或者密码错误')
+    if request.META.get('HTTP_X_FORWARDED_FOR'):
+        ip = request.META.get("HTTP_X_FORWARDED_FOR")
+    else:
+        ip = request.META.get("REMOTE_ADDR")
+    LOG.debug('ip  %s', ip)
     data = Response(_login_user(request, user))
     return data
 
@@ -170,9 +175,13 @@ def register(request):
     User = get_user_model()
     if User.objects.filter(username=username).exists():
         raise ParseError('该用户已被注册了，请直接登录')
-
+    if request.META.get('HTTP_X_FORWARDED_FOR'):
+        ip = request.META.get("HTTP_X_FORWARDED_FOR")
+    else:
+        ip = request.META.get("REMOTE_ADDR")
     with transaction.atomic():
-        u = User.objects.create(username=username, password=password, type='1', first_name=username, email=email)
+        u = User.objects.create(username=username, password=password, type='1', first_name=username, email=email,
+                                ips=ip)
     if not u:
         raise ParseError('用户注册失败')
     return Response('注册成功')
