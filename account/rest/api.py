@@ -10,7 +10,7 @@ from yzm.models import EmailVerifyRecord
 from account.rest.serializers import UserSerializer
 from django.contrib.auth import authenticate, login as django_login, logout as django_logout, get_user_model
 from rest_framework.exceptions import ParseError
-
+from django.contrib.auth.hashers import make_password, check_password
 from common import LOG
 
 
@@ -180,7 +180,8 @@ def register(request):
     else:
         ip = request.META.get("REMOTE_ADDR")
     with transaction.atomic():
-        u = User.objects.create(username=username, password=password, type='1', first_name=username, email=email,
+        u = User.objects.create(username=username, password=make_password(password, None, 'pbkdf2_sha256'), type='1',
+                                first_name=username, email=email,
                                 ips=ip)
     if not u:
         raise ParseError('用户注册失败')
