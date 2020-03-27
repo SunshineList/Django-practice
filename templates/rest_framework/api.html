@@ -42,6 +42,16 @@
     {{ block.super }}
     {% if request.path == '/api/' %}
         <script type="text/javascript">
+            $(".navbar-text").on("click", function () {
+                $.ajax({
+                    type: 'get',
+                    url: '/api/logout/',
+                    success: function (res) {
+                        alert(res.message);
+                        window.location.reload()
+                    }
+                })
+            });
             $(function () {
                 var puns = $('.response-info pre.prettyprint span.pun:contains(":")');
                 $(".navbar-text").on("click", function () {

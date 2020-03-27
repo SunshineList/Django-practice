@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e2f60a5-9156-4abe-b060-06497bf91683" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/account/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/rest_framework/api.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rest_framework/api.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +138,9 @@
       <workItem from="1584971754928" duration="3608000" />
       <workItem from="1584975609612" duration="6800000" />
       <workItem from="1585019533401" duration="3856000" />
-      <workItem from="1585141737450" duration="4220000" />
+      <workItem from="1585141737450" duration="4577000" />
+      <workItem from="1585281640090" duration="769000" />
+      <workItem from="1585293018252" duration="143000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore">
       <created>1584684884044</created>
@@ -258,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585149265026</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add ip for admin">
+      <created>1585149384374</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1585149384374</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,6 +301,7 @@
     <MESSAGE value="remove gender" />
     <MESSAGE value="remove gender from admin" />
     <MESSAGE value="update password make_password" />
-    <option name="LAST_COMMIT_MESSAGE" value="update password make_password" />
+    <MESSAGE value="add ip for admin" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ip for admin" />
   </component>
 </project>
