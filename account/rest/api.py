@@ -94,6 +94,8 @@ def logout(request):
     **参数说明**
     """
     user = request.user
+    if not user:
+        return Response({'message': '请先登录'})
     user.session_key = None
     user.save()
     django_logout(request)

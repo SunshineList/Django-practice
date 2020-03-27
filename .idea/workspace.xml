@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e2f60a5-9156-4abe-b060-06497bf91683" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/migrations/0002_auto_20200319_2226.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/migrations/0003_auto_20200319_2310.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/migrations/0004_auto_20200319_2313.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/rest/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/rest/api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/rest_framework/api.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rest_framework/api.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wangshop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/wangshop/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +67,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -90,9 +97,9 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="wangshop.settings" />
       </envs>
-      <option name="SDK_HOME" value="/usr/local/bin/python3.7" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
@@ -139,7 +146,7 @@
       <workItem from="1585019533401" duration="3856000" />
       <workItem from="1585141737450" duration="4577000" />
       <workItem from="1585281640090" duration="769000" />
-      <workItem from="1585293018252" duration="251000" />
+      <workItem from="1585293018252" duration="2400000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore">
       <created>1584684884044</created>
@@ -274,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585293181401</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="rest page can logout">
+      <created>1585293287520</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1585293287520</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
