@@ -79,8 +79,9 @@
                     } else {
                         if (res.error) {
                             alert("该账号无法注销")
+                        } else {
+                            alert('请先登录')
                         }
-                        alert('请先登录')
                     }
 
                     window.location.reload()
