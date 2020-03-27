@@ -77,7 +77,7 @@
                     if (res.message) {
                         alert(res.message);
                     } else {
-                        if (res.error) {
+                        if (res.error !== '请先登录') {
                             alert("该账号无法注销")
                         } else {
                             alert('请先登录')

@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e2f60a5-9156-4abe-b060-06497bf91683" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/rest/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/rest/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/rest/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/rest/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/rest_framework/api.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rest_framework/api.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -140,7 +143,8 @@
       <workItem from="1585141737450" duration="4577000" />
       <workItem from="1585281640090" duration="769000" />
       <workItem from="1585293018252" duration="3633000" />
-      <workItem from="1585300367466" duration="1117000" />
+      <workItem from="1585300367466" duration="1523000" />
+      <workItem from="1585311542355" duration="5933000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore">
       <created>1584684884044</created>
@@ -296,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585301674219</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="improve msg notify">
+      <created>1585301813886</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1585301813886</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

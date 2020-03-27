@@ -80,8 +80,9 @@ def login(request):
     else:
         ip = request.META.get("REMOTE_ADDR")
     LOG.debug('ip  %s', ip)
-    data = Response(_login_user(request, user))
-    return data
+    return Response(_login_user(request, user))
+
+    # return Response({'msg': '登录成功'})
 
 
 # 注销登录
@@ -94,8 +95,6 @@ def logout(request):
     **参数说明**
     """
     user = request.user
-    if not user:
-        return Response({'message': '请先登录'})
     user.session_key = None
     user.save()
     django_logout(request)
@@ -188,3 +187,22 @@ def register(request):
     if not u:
         raise ParseError('用户注册失败')
     return Response('注册成功')
+
+
+# 查询账号信息
+@api_view(['GET'])
+# @permission_classes((UserAuth,))
+def get_user_info(request):
+    """
+        ##用户信息
+        ---
+        **参数说明**
+        **返回值**
+        * {
+            id:1,
+            'username':admin
+            'date_join':2020-03-29
+            ...
+        }
+        """
+    return Response(_login_user(request, request.user))
