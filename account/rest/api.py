@@ -67,9 +67,9 @@ def login(request):
     username = request.data.get('username')
     LOG.debug("username %s", username)
     yzm = request.POST.get("yzm")  # 用户提交的验证码
-    key = request.POST.get("hash")  # 验证码答案
-    # if not yzm or not key or not jarge_captcha(yzm, key):
-    #     raise ParseError('验证码错误')
+    key = request.POST.get("hashkey")  # 验证码答案
+    if not yzm or not key or not jarge_captcha(yzm, key):
+        raise ParseError('验证码错误')
     user = authenticate(username=username, password=pwd)
     if user is None:
         user = authenticate(username=username, password=pwd)
@@ -172,7 +172,7 @@ def register(request):
         raise ParseError('请确保邮箱和类型是否正确')
     is_success = EmailVerifyRecord.objects.filter(user=username, code=email_key).first()
     if not is_success:
-        raise ParseError('邮箱验证码校验失败')
+        raise ParseError('邮箱验证码校验失败,请核对发送验证码时的用户名')
     User = get_user_model()
     if User.objects.filter(username=username).exists():
         raise ParseError('该用户已被注册了，请直接登录')
@@ -186,7 +186,7 @@ def register(request):
                                 ips=ip)
     if not u:
         raise ParseError('用户注册失败')
-    return Response('注册成功')
+    return Response({'msg': '注册成功'})
 
 
 # 查询账号信息

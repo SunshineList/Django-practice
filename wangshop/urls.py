@@ -19,6 +19,6 @@ from django.conf.urls import include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('account.rest.urls')),
+    path('api/', include('rest.urls')),
     path('captcha/', include('captcha.urls')),
 ]

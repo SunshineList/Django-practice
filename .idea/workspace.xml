@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e2f60a5-9156-4abe-b060-06497bf91683" name="Default Changelist" comment="">
+    <list default="true" id="1e2f60a5-9156-4abe-b060-06497bf91683" name="Default Changelist" comment="添加接口（账号信息）">
+      <change afterPath="$PROJECT_DIR$/hero/rest/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hero/rest/api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/account/rest/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/rest/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/rest/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/rest/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/rest_framework/api.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rest_framework/api.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wangshop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/wangshop/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,14 +64,16 @@
     <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/hero/rest" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/hero/rest" />
+      <recent name="$PROJECT_DIR$/rest" />
+      <recent name="$PROJECT_DIR$/yzm/rest" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/account" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -144,7 +148,8 @@
       <workItem from="1585281640090" duration="769000" />
       <workItem from="1585293018252" duration="3633000" />
       <workItem from="1585300367466" duration="1523000" />
-      <workItem from="1585311542355" duration="5933000" />
+      <workItem from="1585311542355" duration="8445000" />
+      <workItem from="1585399067492" duration="3783000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore">
       <created>1584684884044</created>
@@ -307,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585301813886</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="添加接口（账号信息）">
+      <created>1585321159840</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1585321159840</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,6 +356,17 @@
     <MESSAGE value="rest page can logout" />
     <MESSAGE value="update notify" />
     <MESSAGE value="improve msg notify" />
-    <option name="LAST_COMMIT_MESSAGE" value="improve msg notify" />
+    <MESSAGE value="添加接口（账号信息）" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加接口（账号信息）" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/rest/urls.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
