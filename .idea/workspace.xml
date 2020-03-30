@@ -1,20 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e2f60a5-9156-4abe-b060-06497bf91683" name="Default Changelist" comment="修改项目目录，接口优化">
-      <change afterPath="$PROJECT_DIR$/hero/rest/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+    <list default="true" id="1e2f60a5-9156-4abe-b060-06497bf91683" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1305ba60-ac6c-4bef-978b-b455e12d23eb.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account/rest/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/account/rest/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hero/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/hero/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hero/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/hero/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hero/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/hero/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hero/rest/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/hero/rest/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/rest/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wangshop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/wangshop/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yzm/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/yzm/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +60,7 @@
     <property name="DatabaseDriversLRU" value="sqlite&#10;mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/hero/rest" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -161,7 +150,8 @@
       <workItem from="1585293018252" duration="3633000" />
       <workItem from="1585300367466" duration="1523000" />
       <workItem from="1585311542355" duration="8445000" />
-      <workItem from="1585399067492" duration="16551000" />
+      <workItem from="1585399067492" duration="17243000" />
+      <workItem from="1585532724791" duration="490000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore">
       <created>1584684884044</created>
@@ -338,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585409791547</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="新增 英雄增删改查接口，邮箱验证码换成6位">
+      <created>1585531910214</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1585531910214</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,6 +374,7 @@
     <MESSAGE value="improve msg notify" />
     <MESSAGE value="添加接口（账号信息）" />
     <MESSAGE value="修改项目目录，接口优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改项目目录，接口优化" />
+    <MESSAGE value="新增 英雄增删改查接口，邮箱验证码换成6位" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增 英雄增删改查接口，邮箱验证码换成6位" />
   </component>
 </project>
