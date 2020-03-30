@@ -63,7 +63,7 @@ def get_yzm(request):
 
 
 # 生成随机字符串
-def random_str(randomlength=16):
+def random_str(randomlength=6):
     """
     随机字符串
     :param randomlength: 字符串长度
@@ -100,7 +100,7 @@ def send_code_email(request):
     email = data.get('email')
     if not send_type or not email:
         raise ParseError('邮箱和类型不能为空')
-    code = random_str(16)
+    code = random_str(6)
     email_record = EmailVerifyRecord.objects.create(user=user, code=code, email=email, send_type=send_type)
     if not email_record:
         raise ParseError('创建失败')

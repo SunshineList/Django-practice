@@ -3,6 +3,7 @@ from rest_framework.routers import DefaultRouter
 from yzm.views import refresh_captcha, get_yzm, send_code_email
 from account.rest import api
 from account.rest.router import HybridRouter
+from hero.rest.api import HeroView
 
 # router = DefaultRouter()
 # urlpatterns = [
@@ -18,8 +19,9 @@ functions_and_view_classes = (
     ('账号-修改密码', path('change_pwd/', api.change_pwd, name='restv1-change-pwd')),
     # ('验证码刷新', path('refresh_captcha/', refresh_captcha, name='restv1-refresh_captcha')),
     ('验证码-获取', path('yzm', get_yzm, name='restv1-yzm')),
-    ('验证码-邮箱验证', path('email_yzm', send_code_email, name='restv1-email-yzm'))
+    ('验证码-邮箱验证', path('email_yzm', send_code_email, name='restv1-email-yzm')),
 
+    ('英雄', path('hero/', HeroView.as_view(), name='restv1-hero')),
 )
 
 router = HybridRouter()

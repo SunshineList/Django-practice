@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'account.apps.AccountConfig',
     'common',
-    'corsheaders'
+    'corsheaders',
+    'hero.apps.HeroConfig'
 ]
 
 MIDDLEWARE = [
